@@ -1,44 +1,91 @@
 .App {
-  text-align: center;
-  background-color: #ffffff;
-  min-height: 100vh;
+  background-color: white;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
-  /*  justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: black;
-  size: 100%;
-  min-height: 100vh;
+  font-family: "Georama", sans-serif;
+
+  h1 {
+    margin: 20px;
+  }
+
+  .titles {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    border: solid 2px black;
+    border-radius: 2px;
+    margin-bottom: 0;
+    h4 {
+      margin: 0px;
+    }
+  }
 
   #container {
-    padding: 15px;
     display: flex;
-    justify-content: space-around;
     width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+    padding-top: 0px;
+    height: 100%;
 
     #left-container {
-      padding: 10px;
-      min-height: 94.5vh;
       width: 50%;
+      padding: 10px;
+      height: 95vh;
+
       textarea {
-        background-color: black;
-        color: white;
+        padding: 10px;
+        height: 85%;
         width: 100%;
-        height: 90%;
+        resize: none;
+        background-color: black;
+        color: #79ff79;
+        font-family: "Source Code Pro", monospace;
+        border: solid 1px white;
+        border-radius: 2px;
       }
     }
     #right-container {
       padding: 10px;
       width: 50%;
+      height: 95vh;
+
       #preview {
+        background-color: white;
+        padding: 10px;
+        height: 85%;
+        border: solid 1px black;
+        border-radius: 2px;
         text-align: left;
-        max-height: 85vh;
-        overflow: scroll;
+        overflow-y: scroll;
         img {
-          min-height: 100px;
+          max-height: 50px;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+
+    #left-container {
+      width: 100% !important;
+      height: 85%;
+    }
+    #right-container {
+      width: 100% !important;
+      height: 85%;
     }
   }
 }

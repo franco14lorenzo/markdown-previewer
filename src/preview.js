@@ -1,11 +1,10 @@
- export const PREVIEW = `
- # Heading 1
+ export const PREVIEW = ` # Heading 1
  ## Heading 2
 
  This is a paragraph
 
  > Block Quotes!
- 
+
  **This is bolded text**
 
  - list 1
