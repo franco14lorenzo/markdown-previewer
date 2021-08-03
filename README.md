@@ -2,4 +2,4 @@ Este es el segundo proyecto de 5 para obtener la certificacion de librerias de f
 
 https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer
 
-DEMO: https://franco14lorenzo.github.io/markdown-previwer
+DEMO: https://franco14lorenzo.github.io/markdown-previewer
