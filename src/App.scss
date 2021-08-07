@@ -70,6 +70,20 @@
       }
     }
   }
+  .footer {
+    display: block;
+    margin: 15px auto 30px auto;
+    font-weight: 300;
+    color: #000;
+    font-size: 0.8em;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    a:hover {
+      opacity: 0.85;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
